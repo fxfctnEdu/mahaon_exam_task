@@ -1,9 +1,12 @@
 # Задание
 
-###Подготовка
+### Подготовка
 
 - Склонируйте репозиторий с заданием.
-
+```
+git clone https://github.com/fxfctnEdu/mahaon_exam_task.git
+cd mahaon_exam_task
+```
 - Создайте виртуальное окружение **exam**:
 ```
 python -m venv examvenv

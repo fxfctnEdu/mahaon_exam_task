@@ -1,0 +1,39 @@
+{% extends "staff/base.html" %}
+
+{% block content %}
+
+    <table class="pure-table pure-table-bordered">
+    <thead>
+        <tr>
+            <th>id</th>
+            <th>Name</th>
+            <th>Surname</th>
+            <th>Age</th>
+            <th>Gender</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Address</th>
+        </tr>
+    </thead>
+
+    <tbody>
+
+    {% for employee in employees %}
+        <tr>
+            <td>{{ employee.id }}</td>
+            <td>{{ employee.name }}</td>
+            <td>{{ employee.surname }}</td>
+            <td>{{ employee.age }}</td>
+            <td>{{ employee.gender }}</td>
+            <td>{{ employee.email }}</td>
+            <td>{{ employee.phone }}</td>
+            <td>{{ employee.address }}</td>
+        </tr>
+    {% endfor %}
+
+    </tbody>
+</table>
+
+{% endblock %}
+
+

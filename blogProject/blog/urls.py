@@ -18,5 +18,4 @@ from blog import views
 
 urlpatterns = [
     path('', views.get_index, name='index'),
-    path('/<int:id>/', views.get_post, name='post'),
 ]
